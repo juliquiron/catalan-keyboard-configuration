@@ -1,14 +1,12 @@
 In file /usr/share/X11/xkb/symbols/us add:
 
 // Catalan Keyboard, as manufactured by Large Format Computing, Inc.
-//
 // For layout graphic, see http://www.language-keyboard.com/languages/catalan_layout.htm
-//
 // Contributed by Robert Millan
 
 partial default alphanumeric_keys
 xkb_symbols "catfull" {
-    include "pc/us"
+    include "us"
 
     name[Group1]="Catalan";
 
@@ -24,9 +22,11 @@ xkb_symbols "catfull" {
     key <AD10> { [ p, P, ograve, Ograve	] };
     key <AD12> { [ bracketright, braceright, EuroSign ] };
     key <AC01> { [ a, A, agrave, Agrave ] };
+		key <AC02> { [ s, S, aacute, Aacute ] };
     key <AC08> { [ k, K, idiaeresis, Idiaeresis ] };
     key <AC09> { [ l, L, periodcentered ] };
     key <AB03> { [ c, C, ccedilla, Ccedilla ] };
+		key <AB06> { [ n, N, ntilde, Ntilde ] };
 
     include "level3(ralt_switch)"
 };
